@@ -1,0 +1,37 @@
+# ---- Segredos e ambiente ----
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+# credenciais de serviço (Firebase Admin, etc.) — NUNCA versionar
+**/serviceAccount*.json
+**/firebase-adminsdk*.json
+**/*credentials*.json
+
+# ---- Docker ----
+# (o docker-compose.yml É versionado; ignore só overrides locais e volumes)
+docker-compose.override.yml
+.docker/
+volumes/
+
+# ---- Sistema operacional ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Editores / IDEs ----
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ---- Logs e temporários ----
+*.log
+logs/
+tmp/
+*.tmp
+
+# ---- Node (caso rode algo na raiz, tipo scripts) ----
+node_modules/
